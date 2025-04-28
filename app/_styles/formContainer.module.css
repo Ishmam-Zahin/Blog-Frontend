@@ -1,0 +1,51 @@
+.formContainer{
+    width: 120rem;
+    height: 50rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.sliderContainer{
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+    background-image: linear-gradient(to right bottom, #333333, #282828);
+    position: absolute;
+    padding: 10rem;
+    text-align: center;
+    z-index: 3;
+
+    transition: all 1s;
+}
+
+.slideRight{
+    right: 0;
+    border-top-left-radius: 10rem;
+    border-bottom-left-radius: 10rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.slideLeft{
+    right: 50%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+}
+
+.textContainer{
+    margin-top: 10rem;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.button{
+    width: 10rem;
+    height: 5rem;
+    border: 1px solid white;
+    margin-top: 10rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}

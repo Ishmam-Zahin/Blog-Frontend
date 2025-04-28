@@ -1,0 +1,36 @@
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.input{
+    width: 40rem;
+    font-size: 1.6rem;
+    background-color: white;
+    padding: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 4.5rem;
+    border-radius: 3rem;
+
+    transition: all .2s;
+}
+
+.input:focus{
+    border: none;
+    outline: none;
+    width: 45rem;
+}
+
+.searchIcon{
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+.icon{
+    width: 3rem;
+    height: 3rem;
+    fill: #333333;
+}
