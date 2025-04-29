@@ -1,4 +1,4 @@
 .logo{
-    color: white;
+    color: var(--color-primary-light);
     font-size: 3rem;
 }

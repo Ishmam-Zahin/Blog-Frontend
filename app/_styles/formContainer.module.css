@@ -8,8 +8,7 @@
 .sliderContainer{
     width: 50%;
     height: 100%;
-    background-color: blue;
-    background-image: linear-gradient(to right bottom, #333333, #282828);
+    background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
     position: absolute;
     padding: 10rem;
     text-align: center;

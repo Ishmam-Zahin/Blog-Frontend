@@ -4,8 +4,8 @@
 
     width: 100%;
     height: 100%;
-    background-color: #333333;
-    background-image: linear-gradient(to right, #333333, #282828);
+    background-color: var(--color-dark-1);
+    /* background-image: linear-gradient(to right, #333333, #282828); */
     padding: 0 3rem;
     display: flex;
     flex-direction: row;

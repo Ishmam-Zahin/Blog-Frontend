@@ -14,6 +14,15 @@ html{
     box-sizing: border-box;
 }
 
+:root{
+    --color-grey-light: #f2f2f2;
+    --color-grey-dark: #cbcbcb;
+    --color-primary-light: #f96d00;
+    --color-primary-dark: #bd5200;
+    --color-dark-1: #393e46;
+    --color-dark-2: #222831;
+}
+
 body{
     width: 100vw;
     height: 100vh;
