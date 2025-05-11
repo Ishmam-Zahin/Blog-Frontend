@@ -4,32 +4,17 @@
     position: absolute;
     right: 0;
     padding: 0 5rem;
+    overflow-y: auto;
 
     transform: translate(0, 0);
-    transition: all 1s;
+    transition: all .8s .5s;
 }
 
 .text{
     font-size: 2rem;
-    margin-top: 10rem;
     text-align: center;
 }
 
-.label{
-    font-size: 1.8rem;
-    margin-top: 2rem;
-    display: inline-block;
-}
-
-.input{
-    width: 100%;
-    margin-top: 2rem;
-    display: inline-block;
-    height: 5rem;
-    font-size: 1.6rem;
-    padding: 0 2rem;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .1);
-}
 
 .btnContainer{
     text-align: center;
@@ -53,7 +38,33 @@
 }
 
 .hide{
-    transform: translate(-20rem, 0);
+    transform: translate(-10rem, 0);
     opacity: 0;
     visibility: hidden;
+}
+
+.firstContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+    column-gap: 2rem;
+}
+
+.inputContainer{
+    margin-top: 2rem;
+    width: 100%;
+    height: min-content;
+}
+
+.input{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .1);
+}
+
+.label{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
 }

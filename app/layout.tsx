@@ -1,6 +1,8 @@
 import '@/app/globals.css'
 import Heading from './_components/Heading'
 import Navbar from './_components/Navbar'
+import StoreProvider from '@/app/_components/StoreProvider'
+import QueryProvider from '@/app/_components/QueryProvider'
 
 export default function layout(
   {
@@ -12,9 +14,13 @@ export default function layout(
   return (
     <html>
       <body>
-        <Heading />
-        <Navbar />
-        <main>{children}</main>
+        <StoreProvider>
+          <QueryProvider>
+            <Heading/>
+            <Navbar />
+            <main>{children}</main>
+          </QueryProvider>
+        </StoreProvider>
       </body>
     </html>
   )

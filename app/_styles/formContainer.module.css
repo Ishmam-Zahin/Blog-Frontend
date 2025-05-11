@@ -14,7 +14,7 @@
     text-align: center;
     z-index: 3;
 
-    transition: all 1s;
+    transition: all 1.5s;
 }
 
 .slideRight{
