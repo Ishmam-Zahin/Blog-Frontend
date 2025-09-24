@@ -5,25 +5,22 @@ import { useAppSelector } from '../_lib/hooks';
 import { useMutation } from '@tanstack/react-query';
 import getAuthInfo from '../_lib/apiFunctions/getAuthInfo';
 import Image from 'next/image'
-import {parse} from 'cookie'
 import { useDispatch } from 'react-redux';
-import { changeUserToken } from '../_lib/userTokenSlice';
 import LogoutBtn from './LogoutBtn';
+import { resetUserToken } from '../_lib/userTokenSlice';
 
 export default function ProfileHead() {
     const [showAccountPlate, setShowAccountPlate] = useState(false);
     const token = useAppSelector(state => state.userToken.token);
+    const dispatch = useDispatch();
     const {data, mutate} = useMutation({
         mutationFn: getAuthInfo,
-    })
-    const dispatch = useDispatch();
-    useEffect(() => {
-        const cook = parse(document.cookie);
-        if(cook.token){
-            dispatch(changeUserToken(cook.token));
+        onError: () => {
+            if(token != null){
+                dispatch(resetUserToken());
+            }
         }
-    }, [dispatch]);
-
+    })
     useEffect(() => {
         mutate(token);
     }, [token, mutate]);

@@ -3,9 +3,8 @@ import Logo from './Logo';
 import SearchBar from './SearchBar';
 import HeadingActions from './HeadingActions';
 import Link from 'next/link';
-import getUser from '@/app/_lib/getUser'
 
-export default async function Heading() {
+export default function Heading() {
   return (
     <header className={styles.container}>
         <Link href='/'>

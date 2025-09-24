@@ -36,4 +36,6 @@ body{
 main{
     grid-row: 2 / -1;
     grid-column: 2 / -1;
+
+    overflow-y: auto;
 }

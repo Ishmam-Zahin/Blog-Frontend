@@ -1,10 +1,17 @@
 import { configureStore } from '@reduxjs/toolkit'
 import userTokenReducer from '@/app/_lib/userTokenSlice'
 
-export const makeStore = () => {
+export const makeStore = ({token}: {
+    token: string | undefined,
+}) => {
     return configureStore({
         reducer: {
             userToken: userTokenReducer,
+        },
+        preloadedState: {
+            userToken: {
+                token: token || null,
+            },
         }
     })
 }

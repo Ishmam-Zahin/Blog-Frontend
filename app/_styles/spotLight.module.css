@@ -1,0 +1,146 @@
+.container{
+    max-width: 90rem;
+    height: 20rem;
+    margin: auto;
+    margin-top: 5rem;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.blogCard{
+    width: 30rem;
+    height: 20rem;
+    background-color: var(--color-dark-2);
+    color: white;
+    font-size: 1.6rem;
+
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    transform: translate(-50%, 0) scale(1);
+    /* visibility: hidden; */
+    display: none;
+
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.194);
+
+    transition: all 1s;
+}
+
+.blogSpotLeft3{
+    display: block;
+    z-index: 1;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-200%, 0) scale(.1);
+    opacity: 0;
+}
+
+.blogSpotLeft2{
+    display: block;
+    z-index: 2;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-175%, 0) scale(.3);
+    opacity: .8;
+}
+
+.blogSpotLeft1{
+    display: block;
+    z-index: 6;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-130%, 0) scale(.5);
+    opacity: .9;
+}
+
+.blogSpot{
+    display: block;
+    z-index: 10;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+}
+
+.blogSpotRight1{
+    display: block;
+    z-index: 6;
+    left: 50%;
+    bottom: 0;
+    transform: translate(30%, 0) scale(.5);
+    opacity: .9;
+}
+
+.blogSpotRight2{
+    display: block;
+    z-index: 2;
+    left: 50%;
+    bottom: 0;
+    transform: translate(75%, 0) scale(.3);
+    opacity: .8;
+}
+
+.blogSpotRight3{
+    display: block;
+    z-index: 1;
+    left: 50%;
+    bottom: 0;
+    transform: translate(100%, 0) scale(.1);
+    opacity: 0;
+}
+
+.btn{
+    position: absolute;
+    z-index: 50;
+    height: 100%;
+    padding: 0 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+
+    transition: all .2s;
+}
+
+.container:hover .btn{
+    visibility: visible;
+    opacity: 1;
+}
+
+.btn:hover{
+    background-color: rgb(220, 220, 220);
+}
+.btn:active{
+    background-color: rgb(192, 192, 192);
+}
+
+.icon{
+    width: 3rem;
+    height: 3rem;
+}
+
+.btnLeft{
+    left: -1rem;
+}
+
+.btnRight{
+    right: -1rem;
+}
+
+.floatLeft{
+    position: absolute;
+    left: 0;
+    z-index: 40;
+    height: 100%;
+    width: 5rem;
+    background-image: linear-gradient(to right, white 40%, rgba(255, 255, 255, 0) 60%);
+}
+
+.floatRight{
+    position: absolute;
+    right: 0;
+    z-index: 40;
+    height: 100%;
+    width: 5rem;
+    background-image: linear-gradient(to left, white 40%, rgba(255, 255, 255, 0) 60%);
+}

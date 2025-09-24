@@ -1,5 +1,5 @@
 export type headers = {
-    'Content-Type': string,
+    'Content-Type'?: string,
     'Authorization'?: string,
 }
 
